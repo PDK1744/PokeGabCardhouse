@@ -15,39 +15,7 @@
     /* Prevents white rectangle pseudos from overlapping the sections below */
     overflow: hidden;
   }
-  #hero-81:before {
-    /* Left side of the triangle */
-    content: '';
-    width: 31.25rem;
-    /* make really long so it covers the whole screen all the way to desktop */
-    height: 250rem;
-    background: #fff;
-    opacity: 1;
-    transform: rotate(-67deg);
-    transform-origin: center;
-    position: absolute;
-    display: block;
-    bottom: -139.6875rem;
-    /* this makes the right edge sit at the 50% line at all times */
-    right: 50%;
-    z-index: 0;
-  }
-  #hero-81:after {
-    /* Right side of the triangle */
-    content: '';
-    width: 31.25rem;
-    height: 250rem;
-    background: #fff;
-    opacity: 1;
-    transform: rotate(67deg);
-    transform-origin: center;
-    position: absolute;
-    display: block;
-    bottom: -139.6875rem;
-    /* this makes the left edge sit at the 50% line at all times */
-    left: 50%;
-    z-index: 0;
-  }
+
   #hero-81 .cs-background {
     width: 100%;
     height: 100%;

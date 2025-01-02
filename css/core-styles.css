@@ -284,13 +284,13 @@
   #cs-navigation .cs-logo {
     width: auto;
     max-width: none;
-    height: 100%;
+    height: 3.5rem;
     margin: 0 auto 0 0;
     padding: 0 0.5rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     z-index: 10;
   }
@@ -302,8 +302,9 @@
     text-decoration: none;
   }
   #cs-navigation .cs-logo img {
-    width: 100%;
+    width: auto;
     height: 100%;
+    max-height: 3rem;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -484,7 +485,7 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it white */
-    filter: grayscale(1) brightness(1000%);
+    /*filter: grayscale(1) brightness(1000%); */
   }
   body.dark-mode #cs-navigation .cs-line {
     background-color: #fff;
@@ -524,9 +525,9 @@
     display: none;
   }
   #cs-navigation .cs-logo {
-    width: 18.4%;
+    width: auto;
     max-width: 21.875rem;
-    height: 4.0625rem;
+    height: 5rem;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
     padding: 0;
@@ -543,8 +544,9 @@
     text-decoration: none;
   }
   #cs-navigation .cs-logo img {
-    width: 100%;
+    width: auto;
     height: 100%;
+    max-height: 5rem;
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -601,7 +603,7 @@
   }
   body.dark-mode #cs-navigation .cs-logo {
     /* makes it turn white */
-    filter: grayscale(1) brightness(1000%);
+    /*filter: grayscale(1) brightness(1000%); */
   }
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--bodyTextColorWhite);
@@ -859,5 +861,24 @@
   #cs-footer-269 .cs-contact {
     /* 8px - 12px */
     margin-top: clamp(0.5rem, 1.2vw, 0.75rem);
+  }
+}
+
+/* Override template styles at desktop breakpoint */
+@media only screen and (min-width: 81.25rem) {
+  #hero-81 {
+      background-image: none !important;
+  }
+  
+  #hero-81::before {
+      background: none !important;
+  }
+  
+  #hero-81 .cs-background {
+      display: block !important;
+  }
+  
+  #hero-81 .cs-background img {
+      display: block !important;
   }
 }
