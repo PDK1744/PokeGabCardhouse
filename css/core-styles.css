@@ -485,7 +485,7 @@ main, header, footer {
     line-height: 1.2em;
     text-decoration: none;
     margin: 0;
-    color: var(--headerColor);
+    color: var(--primaryLight);
     display: inline-block;
     position: relative;
   }
