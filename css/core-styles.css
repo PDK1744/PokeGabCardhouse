@@ -4,9 +4,9 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #853A3A;
+    --primary: #FF4500;
     --primaryLight: #001F3F;
-    --secondary: #E4A95F;
+    --secondary: #FF4500;
     --secondaryLight: #FFBA43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4E4B66;
@@ -861,6 +861,28 @@
   #cs-footer-269 .cs-contact {
     /* 8px - 12px */
     margin-top: clamp(0.5rem, 1.2vw, 0.75rem);
+  }
+}
+.cs-footer-bottom {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cs-credit-link {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+@media only screen and (min-width: 64rem) {
+  .cs-footer-bottom {
+      padding: 2rem 1rem;
+  }
+  
+  .cs-credit {
+      font-size: 1rem;
   }
 }
 
